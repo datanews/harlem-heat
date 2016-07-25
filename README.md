@@ -296,4 +296,4 @@ void end();
 
 I then rewrote the sensor's code to "begin" and "end" connections with the SD card, and also to skip the whole sensor-reading process if the "begin" part fails (meaning there's no SD card in place, or there's some other problem).
 
-This appears to allow a "hot swap" of the SD card without a reset. This 
+This appears to allow a "hot swap" of the SD card without a reset. 
