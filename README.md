@@ -18,12 +18,13 @@ _Key Parts_
 - [Lithium Ion Battery](https://www.adafruit.com/products/2011)
 - [SD Cards](https://www.adafruit.com/products/102)
 - [USB Micro cable](https://www.adafruit.com/products/2185)
+- Plastic or electrical tape
 
 _Optional Part_
 
 - [Breadboard](https://www.adafruit.com/products/64)
 
-Need one of each of these. All of the parts (except the breadboard) are listed in this [Adafruit wishlist](http://www.adafruit.com/wishlists/406691) I made for easy buying. 
+Need one of each of these. All of the parts (except the breadboard and tape) are listed in this [Adafruit wishlist](http://www.adafruit.com/wishlists/406691) I made for easy buying. 
 
 ### Tools
 
@@ -42,17 +43,25 @@ The first step is to solder the [Stacking Header Pins](https://www.adafruit.com/
 
 The hardest part of soldering, I find, is holding the parts in place. That's where the [breadboard](https://www.adafruit.com/products/64) comes in. Here's how I did it. 
 
-- Grab the headers (the rows of little pins) that the Proto Board comes with and put their long ends into columns _b_ and _h_ on the breadboard, with one pin from each set also in _Row 1_. (In the picture below, I've already snapped one of the lengths to a row of 12 pins, which you can do now or later.)
+- Grab the headers (the rows of little pins) that the Proto Board comes with.
+- These row of pins are designed to break apart. On _one_ of these rows, you need to snap off a row of 12 pins. (Since these rows usually come in lengths of 16 pins, it's easier to snap off 4 pins from one end.)
+- Push the shorter header into _column h_ of the breadboard, its long gold pins pointing down into the board. Make sure one of the gold pins is also in the breadboard's _Row 1_.
+- Put the longer header into _column b_ of the breadboard, again with its long gold pins pointing down and making sure one of the gold pins is also in the breadboard's _Row 1_. It should now look like this:
 
-![Rows of pins in breadboard](images/pins_in_breadboard.jpg)
+![Rows of pins in breadboard](images/header_pins_rows_b_h.jpg)
 
-- Slide the [Stacking Header Pins](https://www.adafruit.com/products/2830) into the pins now sticking out of the breadboard. 
+- Position the holes of the two rows of [Stacking Header Pins](https://www.adafruit.com/products/2830) into the pins now sticking out of the breadboard. The shorter of the two headers should be on the _h_ column, and the longer one should be on the _b_ column. 
 
- corresponding holes on the Proto Board, with the plastic sides of the headers ending up on the "top" of the board (along with all of the other little parts) and the headers' pins sticking out the "bottom" of the board, which is smoother than the other side.
+![Putting header pins on breadboard](images/headers_on_pins.jpg)
 
-(image of putting header pins on breadboard)
+- Slide the Basic Proto board onto the long Stackable Header pins. 
 
-- Holding the Stacking Header Pins in place, turn the entire assembly upside down onto the rows of short pins sticking out of the breadboard. The idea is that the pins in the breadboard provide a base for the upside-down Stacking Headers. You should now have the bottom of the Basic Proto board facing upward, along with the long pins of the Stacking Headers -- all ready to solder.
+![Sliding Feather onto pins](images/lower_feather_onto_pins.jpg)
+
+- You should now have the bottom of the Basic Proto board facing upward, along with the long pins of the Stacking Headers -- all ready to solder.
+
+![Feather on pins](images/feather_on_pins.jpg)
+
 - Solder all of the pins to the board. 
 - Remove the board from the breadboard setup.
 
@@ -60,11 +69,17 @@ The hardest part of soldering, I find, is holding the parts in place. That's whe
 
 The [Adalogger FeatherWing - RTC + SD Add-on](https://www.adafruit.com/products/2922) is the other board, which has a little round battery holder and a slot for an SD card on one side. That's the top side.
 
-- Take the row of pins out of _Column a_ of the breadboard.
-- This row of pins is designed to break apart. You want to snap off a row of 12 pins. (Since these rows usually come in lengths of 16 pins, it's easier to snap off 4 pins from one end.)
-- Replace the shortened row of pins into _Column a_ of the breadboard, with one of the pins also in _Row 1_.
+- We need to swap our header positions now. So take the shorter header out of the breadboard's _column h_ and put it into _column c_. 
+- Take the longer header out of _column b_ and put it into _column i_. 
+- Make sure both headers have one pin in the breadboard's _Row 1_. It should now look like this:
+
+![Pins swapped for RTC/SD Featherwing](images/header-pins_rows_c_i.jpg)
+
 - Place the outer rows of holes of the RTC/SD FeatherWing (the holes closest to the edge of the board) onto the rows of pins on the breadboard. It should fit nicely!
-- (A set of these pins also come with the RTC/SD board, so now you have spares.)
+
+![Featherwing on Pins](images/featherwing_on_pins.jpg)
+
+- (Note that a set of header pins also come with the RTC/SD board, so now you have spares.)
 - Solder all the pins to the board.
 - Remove the board from the breadboard.
 - Snap the [CR1220 Coin Cell Battery](https://www.adafruit.com/products/380) into the round holder on the RTC board. I did this by tucking the battery under the tiny plastic tabs near the short side of the board and _then_ under the gold bar across the battery holder.
@@ -76,38 +91,44 @@ These are the steps for adding the [DHT22 temperature-humidity sensor](https://w
 
 - Insert the temperature sensor into the Base Proto board as shown:
 
-(image)
+![Temp Sensor Positioning](images/temp_sensor_positioning.jpg)
 
 - You may want to support the temperature sensor with a stack of three quarters to hold it horizontal while you solder.
-- **Secure the Sensor** Looking at the bottom of the Base Proto board (and the back of the temperature sensor), and with the temperature sensor pointing away from you, solder the second pin from the left to the board. See image below for a visual. This pin is actually not used by the sensor, but we're soldering it first to hold it in place.
+- **Secure the Sensor** Looking at the bottom of the Base Proto board (and the back of the temperature sensor), and with the temperature sensor pointing away from you, solder the second pin from the left to the board. See image below for a visual. This pin is actually not used by the sensor, but we're soldering it first to hold it in place. Here's the pin highlighted:
 
-(iumage of soldering second pin)
+![Second Solder Pin](images/second_solder_pin.jpg)
 
 - **Grounding the Sensor** With the same orientation, use the needle-nose pliers to bend the sensor's first pin on the left so it reaches and actually fits partly inside the first row of "ground" holes, and solder it to the hole as shown: 
 
-(image of soldered to ground)
+![First pin to ground](images/first_pin_to_gnd.jpg)
 
-- **Insert the Resistor** Bend the legs of the resistor that came with the temperature sensor and, from the other side of the board, insert the legs so their long wires come through these two holes:
+- **Insert the Resistor** Bend the legs of the resistor that came with the temperature sensor and, from the other side of the board, insert the legs so their long wires come through the two holes the red arrows are pointing to (the green line represents the position of the resistor on the other side of the board):
 
-(image of holes, with resistor outline -- showing where it is on the other side of the board)
+![Position of resistor and its legs](images/rotated_resistor_denoted.jpg)
 
 - **Power to the Sensor** Solder the topmost resistor leg to both the hole it came through and to the rightmost pin on the temperature sensor. I actually use the little hole between the resistor leg and the temperature sensor as a solder meeting point.
+
+![Power connection](images/power_connection.jpg)
 
 - **Data link to the Sensor** This is the trickiest one. We need to connect the remaining sensor pin (second from the right) to the remaining resistor leg _and_ to the Feather's header pin Number 5. It's the third one down on the right side. You can see a small "5" printed on the board itself. I do this by:
   - Using the needle-nose pliers to pend the Number 5 pin so it arcs over the first row of holes to the hole where the resistor leg is, and solder the two together there. (The Number 5 pin must not touch the row of holes nearest to it.)
   - Bending the remaining resistor leg to meet the sensor leg at a hole between them, and soldering them together there.
   
-  (image)
+![Data connection](images/data_connection.jpg)
   
 #### Final Sensor Assembly
 
 - Stack the RTC/SD Featherwing board on top of the Base Proto board, making sure all pins go into all holes.
 
 - Using the wirecutters, clip all of the long pins off the bottom of the Base Proto board. Be sure not to accidentally cut the one pin that we used to connect to the temperature sensor in the previous section.
-  
-- Put a segment of double-sided tape onto the bottom of the Base Proto board.
 
-- Adhere the large [Lithium Ion Battery](https://www.adafruit.com/products/2011) onto the double-sided tape.
+![Snipping pins](images/snip_pins.jpg)
+
+- Using plastic or electrical tape, secure the wires of the [Lithium Ion Battery](https://www.adafruit.com/products/2011) along one of its edges. This keeps the wire in place and prevents accidental strain on the wire connection at the battery.
+
+![Taping the battery wires](images/taping_battery.jpg)
+  
+- Adhere the large [Lithium Ion Battery](https://www.adafruit.com/products/2011) onto the bottom of the Base Proto board using double-sided tape, making sure that the plug on the battery is near (and can reach) the matching outlet on the board.
 
 - Firmly insert the plug from the [Lithium Ion Battery](https://www.adafruit.com/products/2011) into the matching outlet on the base board.
 
@@ -123,6 +144,8 @@ Please keep me away from children and pets.
 If I am lost or damaged, please call (646) 801-9698
 or email wnyclabs@gmail.com.
 ```
+
+![Done!](images/assembled_line.jpg)
 
 ## Software Installation
 
