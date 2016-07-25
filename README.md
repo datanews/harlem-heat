@@ -112,7 +112,7 @@ These are the steps for adding the [DHT22 temperature-humidity sensor](https://w
 
 - **Power to the Sensor** Solder the topmost resistor leg to both the hole it came through and to the rightmost pin on the temperature sensor. I actually use the little hole between the resistor leg and the temperature sensor as a solder meeting point.
 
-![Power connection](images/power_connection.jpg)
+![Power connection](images/power_to_sensor.jpg)
 
 - **Data link to the Sensor** This is the trickiest one. We need to connect the remaining sensor pin (second from the right) to the remaining resistor leg _and_ to the Feather's header pin Number 5. It's the third one down on the right side. You can see a small "5" printed on the board itself. I do this by:
   - Using the needle-nose pliers to pend the Number 5 pin so it arcs over the first row of holes to the hole where the resistor leg is, and solder the two together there. (The Number 5 pin must not touch the row of holes nearest to it.)
