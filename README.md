@@ -1,8 +1,12 @@
 # Harlem Heat Sensors
 
-Documenting the process.
+We set out to measure heat in Harlem apartments, particularly those without air conditioning, during the summer of 2016 -- doing research and telling stories along the way. The details can be found in the [kickoff story](http://www.wnyc.org/story/harlem-heat-project-launch) and in [subsequent reports](http://www.wnyc.org/series/harlem-heat-project).
 
+To take the measurements, we built Do It Yourself devices that wake up every 15 minutes, record the heat and hummidity where they are, and go back to sleep. A team of volunteer ambassadors worked with Harlem residents to put devices in their apartments -- and to collect the data off them periodically.
 
+This Github repo contains the code and steps we did along the way, in the hope that others can also replicate (and build upon) this project in their own communities. 
+
+It's a work in progress, so more information and details will be coming.
 
 ## Sensor Assembly
 
