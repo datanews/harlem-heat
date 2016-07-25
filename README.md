@@ -108,7 +108,7 @@ These are the steps for adding the [DHT22 temperature-humidity sensor](https://w
 
 - **Insert the Resistor** Bend the legs of the resistor that came with the temperature sensor and, from the other side of the board, insert the legs so their long wires come through the two holes the red arrows are pointing to (the green line represents the position of the resistor on the other side of the board):
 
-![Position of resistor and its legs](images/rotated_resistor_denoted.jpg)
+![Position of resistor and its legs](images/annotated_resistor_fix.jpg)
 
 - **Power to the Sensor** Solder the topmost resistor leg to both the hole it came through and to the rightmost pin on the temperature sensor. I actually use the little hole between the resistor leg and the temperature sensor as a solder meeting point.
 
