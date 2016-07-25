@@ -119,6 +119,10 @@ These are the steps for adding the [DHT22 temperature-humidity sensor](https://w
   - Bending the remaining resistor leg to meet the sensor leg at a hole between them, and soldering them together there.
   
 ![Data connection](images/data_connection.jpg)
+
+- When you're all done, the soldering should look like this:
+
+![Soldering done](images/solder_job.jpg)
   
 #### Final Sensor Assembly
 
