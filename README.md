@@ -99,7 +99,7 @@ These are the steps for adding the [DHT22 temperature-humidity sensor](https://w
 
 - **Secure the Sensor** Looking at the bottom of the Base Proto board (and the back of the temperature sensor), and with the temperature sensor pointing away from you, solder the second pin from the left to the board. See image below for a visual. This pin is actually not used by the sensor, but we're soldering it first to hold it in place. Here's the pin highlighted:
 
-![Second Solder Pin](images/second_solder_pin.jpg)
+![Second Solder Pin](images/second_solder_pin_fix.jpg)
 
 - You may want to support the temperature sensor with a stack of three quarters to hold it horizontal while you solder.
 - **Grounding the Sensor** With the same orientation, use the needle-nose pliers to bend the sensor's first pin on the left so it reaches and actually fits partly inside the first row of "ground" holes, and solder it to the hole as shown: 
