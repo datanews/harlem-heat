@@ -77,7 +77,7 @@ The [Adalogger FeatherWing - RTC + SD Add-on](https://www.adafruit.com/products/
 - Take the longer header out of _column b_ and put it into _column i_. 
 - Make sure both headers have one pin in the breadboard's _Row 1_. It should now look like this:
 
-![Pins swapped for RTC/SD Featherwing](images/header-pins_rows_c_i.jpg)
+![Pins swapped for RTC/SD Featherwing](images/header_pins_rows_c_i.jpg)
 
 - Place the outer rows of holes of the RTC/SD FeatherWing (the holes closest to the edge of the board) onto the rows of pins on the breadboard. It should fit nicely!
 
